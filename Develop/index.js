@@ -55,7 +55,7 @@ const questions = [
     {
         message: "What is your email address?",
         type: "input",
-        name: "email"   
+        name: "email"
     },
 
 ];
@@ -70,6 +70,11 @@ function init() {
     .then(answers => {
         writeToFile("README.md", generateMarkdown.generateMarkdown(answers));
     });
+
+    // catch (err) {
+    //     console.log(err);
+
+    // };
 
 }
 
