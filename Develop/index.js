@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require("inquirer");
-const generatedMd = require("./utils/generateMarkdown.js");
-const { type } = require('os');
+// const generatedMd = require("./utils/generateMarkdown.js");
+// const { type } = require('os');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
@@ -55,7 +55,7 @@ const questions = [
     {
         message: "What is your email address?",
         type: "input",
-        name: "email"
+        name: "email"   
     },
 
 ];
